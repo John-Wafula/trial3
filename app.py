@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 
 st.write(""" 
-# WAFULAS HEART FAILURE PREDICTION APP
+# VIOLET HEART FAILURE PREDICTION APP
 
 This app predicts the likelihood of a person having an **Heart Attack** .
 
@@ -194,7 +194,7 @@ else:
     st.write(df.iloc[:len(input_df),12:])
 
 
-load_clf = pickle.load(open("C:/Users/Admin/Downloads/heart-failure-prediction/heart-failure-prediction/model.pkl", 'rb'))
+load_clf = pickle.load(open("model.pkl", 'rb'))
 
 try:
     prediction = load_clf.predict(df_)
