@@ -72,7 +72,7 @@ except BaseException:
     input_df = user_input_features()
 
 
-heart_raw = pd.read_csv("C:/Users/Admin/Downloads/heart-failure-prediction/heart-failure-prediction/heart_failure_clinical_records_dataset.csv")
+heart_raw = pd.read_csv("heart_failure_clinical_records_dataset.csv")
 
 heart_raw['sex'] = np.where(heart_raw['sex'] == 1, 'Male','Female')
 
